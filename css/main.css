@@ -17,34 +17,57 @@ html {
   box-sizing: inherit;
 }
 
+img {
+  width: 100%;
+  display: inline-block;
+}
+
 img:nth-child(2n) {
   display: none;
 }
 
-img {
-  width: 100%;
-}
+@media only screen and (min-width: 25em) {
 
-@media only screen and (min-width: 38em) {
+  img {
+    width: 49%;
+    display: inline;
+  }
 
   img:nth-child(2n) {
     display: inline;
   }
 
+}
+
+@media only screen and (min-width: 38em) {
+
   img {
-    width: 49.5%;
-    display: inline;
+    width: 32%;
+  }
+
+  img:nth-child(1) {
+    display: none;
   }
 
 }
 
 @media only screen and (min-width: 60em) {
 
-  img:nth-child(2) {
-    display: none;
+  img {
+    width: 24.5%;
   }
 
-  img {
-    width: 33%;
+  img:nth-child(1) {
+    display: inline;
   }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  img {
+    width: 24%;
+    text-align: center;
+  }
+
 }
